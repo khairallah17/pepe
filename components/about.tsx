@@ -9,7 +9,7 @@ const textShadow = "drop-shadow-md [text-shadow:-1px_-1px_0_black,1px_-1px_0_bla
 const About = () => {
     return (
     <div className='container mx-auto py-20 flex items-start flex-wrap'>
-        <div className='flex gap-4 flex-col w-full px-5'>
+        <div className='flex gap-4 flex-col lg:w-3/4 w-full px-5'>
             <h1 className={`${Brevia.className} uppercase self-start text-[100px] md:text-[125px] text-secondary ${textShadow} drop-shadow-xl`}>
                 about
             </h1>
@@ -20,7 +20,7 @@ const About = () => {
                 With &apos;The Last Pepe&apos; coin, you not only join a thriving community of like-minded individuals but also become part of a movement that embraces the spirit of internet culture. Whether you&apos;re a seasoned crypto investor or new to the world of digital currencies, &apos;The Last Pepe&apos; offers an exciting and accessible entry point into the world of meme-based cryptocurrencies.
             </p>
         </div>
-        <div>
+        <div className='lg:w-1/4 w-full'>
             <Image
                 src="/PEPE3.svg"
                 width={800}

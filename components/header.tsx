@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import localFont from 'next/font/local'
 
 const Brevia = localFont({src: "/fonts/Brevia-ExtraBlackItalic.otf"})
@@ -19,11 +20,13 @@ const Header = () => {
             />
         </div>
         <div className={`w-full flex mt-12 md:pb-4 pb-0 px-5 justify-end items-center gap-12 h-[180px] md:h-fit ${Brevia.className} text-2xl uppercase tracking-tight border-b-[3px] border-b-white`}>
-            <ul className="hidden items-center gap-12 py-10 md:flex">
+            <ul className="hidden items-center gap-12 py-10 md:flex relative z-[99] ">
               <li className={`drop-shadow-md ${textShadow}`}>Home</li>
               <li className={`drop-shadow-md ${textShadow}`}>about</li>
               <li className={`drop-shadow-md ${textShadow}`}>chart</li>
-              <li className={`drop-shadow-md ${textShadow}`}>telegram</li>
+              <li className={`drop-shadow-md ${textShadow}`}>
+                <Link href="https://t.me/thelastpepejoin" target="_blank">telegram</Link>
+              </li>
             </ul>
             <button className={`${textShadow} uppercase text-secondary border-[3px] rounded-full px-4 py-2 shadow-inner drop-shadow-md`}>
             buy now
