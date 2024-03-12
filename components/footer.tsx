@@ -32,20 +32,29 @@ const Footer = () => {
               className='w-32 h-auto'
             />
           </Link>
+          <Link href="https://twitter.com/Tlptoken" target='_blank'>
+            <Image
+              src="/X.svg"
+              width={0}
+              height={0}
+              alt=''
+              className='w-32 h-auto'
+            />
+          </Link>
         </div>
         <Image
           src="/SPEECH.svg"
           width={0}
           height={0}
           alt=''
-          className='w-1/3 h-auto mt-10 ml-32'
+          className='md:w-1/3 w-auto h-auto mt-10 md:ml-32 relative z-[99]'
         />
         <Image
           src="/PEPEFOOTER.svg"
           alt=''
           height={0}
           width={0}
-          className='-left-20 top-64 opacity-45 w-auto h-auto absolute'
+          className='md:-left-20 md:top-64 top-[450px] opacity-45 w-auto h-auto absolute'
         />
       </div>
     </div>
