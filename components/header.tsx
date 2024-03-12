@@ -20,7 +20,7 @@ const Header = () => {
             />
         </div>
         <div className={`w-full flex mt-12 md:pb-4 pb-0 px-5 justify-end items-center gap-12 h-[180px] md:h-fit ${Brevia.className} text-2xl uppercase tracking-tight border-b-[3px] border-b-white`}>
-            <ul className="hidden items-center gap-12 py-10 md:flex relative z-[99] ">
+            <ul className="flex items-center gap-12 py-10 md:flex relative z-[99]">
               <li className={`drop-shadow-md ${textShadow}`}>
                 <Link href="https://twitter.com/Tlptoken" target="_blank">X</Link>
               </li>
@@ -28,7 +28,7 @@ const Header = () => {
                 <Link href="https://t.me/thelastpepejoin" target="_blank">telegram</Link>
               </li>
             </ul>
-            <Link className={`${textShadow} uppercase text-secondary border-[3px] rounded-full px-4 py-2 shadow-inner drop-shadow-md`} href="https://t.me/thelastpepejoin" target="_blank">BUy NOW</Link>
+            {/* <Link className={`${textShadow} uppercase text-secondary border-[3px] rounded-full px-4 py-2 shadow-inner drop-shadow-md`} href="https://t.me/thelastpepejoin" target="_blank">BUy NOW</Link> */}
         </div>
     </nav>
   )

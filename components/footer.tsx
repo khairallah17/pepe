@@ -42,13 +42,13 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <Image
+        {/* <Image
           src="/SPEECH.svg"
           width={0}
           height={0}
           alt=''
           className='md:w-1/3 w-auto h-auto mt-10 md:ml-32 relative z-[99]'
-        />
+        /> */}
         <Image
           src="/PEPEFOOTER.svg"
           alt=''
