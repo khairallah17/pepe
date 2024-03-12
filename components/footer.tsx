@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -13,20 +14,24 @@ const Footer = () => {
           className='w-1/4 h-auto rotate-[10deg]'
         />
         <div className='flex items-center gap-20'>
-          <Image
-            src="/TELEGRAM.svg"
-            width={0}
-            height={0}
-            alt=''
-            className='w-32 h-auto'
-          />
-          <Image
-            src="/DEX.svg"
-            width={0}
-            height={0}
-            alt=''
-            className='w-32 h-auto'
-          />
+          <Link href="https://t.me/thelastpepejoin" target='_blank'>
+            <Image
+              src="/TELEGRAM.svg"
+              width={0}
+              height={0}
+              alt=''
+              className='w-32 h-auto'
+            />
+          </Link>
+          <Link href="https://twitter.com/Tlptoken" target='_blank'>
+            <Image
+              src="/DEX.svg"
+              width={0}
+              height={0}
+              alt=''
+              className='w-32 h-auto'
+            />
+          </Link>
         </div>
         <Image
           src="/SPEECH.svg"
